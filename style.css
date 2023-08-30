@@ -737,3 +737,30 @@ body {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   }
 }
+
+#reloj {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  #reloj {
+    width: 50%;
+  }
+}
+
+#reloj {
+  font-size: 2em; /* El tamaño de la fuente será el doble del tamaño de la fuente del elemento padre */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* vh es una unidad relativa que representa el 1% de la altura de la ventana del navegador */
+  overflow: hidden;
+}
+
+.flipclock, .flip-pane, .flip-item, .flip-text, .flip-apm {
+    font-size: 2rem; /* El tamaño de la fuente será el doble del tamaño del texto raíz del documento */
+    width: 50%; /* Ocupará la mitad del ancho del elemento contenedor */
+}
